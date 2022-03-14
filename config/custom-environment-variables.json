@@ -1,0 +1,24 @@
+{
+    "dbConfig":{
+        "client": "DB_CLIENT",
+        "host": "DB_HOST",
+        "user": "DB_USER",
+        "port": "DB_PORT",
+        "password": "DB_PASSWORD",
+        "database": "DATABASE"
+    },
+    "testDbConfig":{
+        "client": "TEST_DB_CLIENT",
+        "host": "TEST_DB_HOST",
+        "user": "TEST_DB_USER",
+        "port": "TEST_DB_PORT",
+        "password": "TEST_DB_PASSWORD",
+        "database": "TEST_DATABASE"
+    },
+    "server": {
+        "port": "PORT"
+    },
+    "security": {
+        "jwtSecret": "JWT_TOKEN_SECRET"
+    }
+}
