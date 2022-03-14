@@ -8,7 +8,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  test:
 
     runs-on: ubuntu-latest
 
@@ -26,10 +26,19 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm test
-    - name: Test Report
-      uses: dorny/test-reporter@v1
-      if: success() || failure()   
+    - name: Coveralls Parallel
+      uses: coverallsapp/github-action@master
       with:
-          name: Mocha Tests            
-          path: report/test-results.json    
-          reporter: mocha-json      
+        github-token: ${{ secrets.GIT_TOKEN }}
+        flag-name: run-${{ matrix.node-version }}
+        parallel: true
+
+  finish:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Coveralls Finished
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GIT_TOKEN }}
+        parallel-finished: true
