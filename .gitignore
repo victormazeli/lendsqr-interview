@@ -6,7 +6,7 @@
 # Node artifact files
 node_modules/
 dist-server/
-.nyc_output
+.nyc_output/
 #  env files
  .env
  
