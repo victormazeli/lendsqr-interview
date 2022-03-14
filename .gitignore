@@ -9,7 +9,7 @@ dist-server/
 .nyc_output/
 #  env files
  .env
- 
+ ./.env
 # Compiled Java class files
 *.class
 
