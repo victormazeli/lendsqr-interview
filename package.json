@@ -12,7 +12,7 @@
     "dev": "cross-env NODE_ENV=development npm-run-all build server",
     "prod": "cross-env NODE_ENV=production npm-run-all build server",
     "watch:dev": "nodemon",
-    "test": "mocha --require @babel/register src/test/specs/**/*spec.js --exit && mocha --reporter json > test-results.json",
+    "test": "nyc --reporter=html mocha --require @babel/register src/test/specs/**/*spec.js --exit && nyc report --timeout 10000",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint . --fix",
     "db:migrate": "knex migrate:latest --knexfile ./knexfile.js",
