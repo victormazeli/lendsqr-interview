@@ -1,9 +1,6 @@
-# lendsqr-interview
+## lendsqr-interview
 
 [![Coverage Status](https://coveralls.io/repos/github/victormazeli/lendsqr-interview/badge.svg)](https://coveralls.io/github/victormazeli/lendsqr-interview)
-
-
-## lendsqr Interview Project
 
 # Tech Stack
 - Node 16.14.0LTS
@@ -19,7 +16,7 @@
 - nyc
 
 # Test Cases
-# Auth
+Auth
 - user should should signup and return a status code 201 with the following response data: userId, fullName, email, walletId, balance.
 - user should be able to login and the response status should be 200, with a token returned
 - user should not be omit any of the required input during signup, if omitted returned a 400 status code, with a proper readable error message.
