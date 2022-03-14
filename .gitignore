@@ -7,6 +7,7 @@
 node_modules/
 dist-server/
 .nyc_output/*
+.nyc_output/processinfo/*
 .nyc_output
 
 #  env files
