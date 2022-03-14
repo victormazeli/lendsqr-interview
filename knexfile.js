@@ -1,5 +1,5 @@
 require('dotenv').config()
-const { development, test, production } = require('./config/config')
+const { development, test } = require('./config/config')
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
  */
@@ -39,8 +39,14 @@ module.exports = {
     },
 
     production: {
-        client: production.dbClient,
-        connection: production.databaseUrl,
+        client: development.dbClient,
+        connection: {
+            database: development.database,
+            user: development.dbUser,
+            password: development.dbPassword,
+            host: development.dbHost,
+            port: development.dbPort,
+        },
         migrations: {
             directory: `${__dirname}/migrations`,
         },
