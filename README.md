@@ -15,6 +15,11 @@
 - coverall
 - nyc
 
+## Project Urls
+- [HostedUrl](https://lendsqr-int-task.herokuapp.com) - Heroku hosted url
+- [Doc](https://lendsqr-int-task.herokuapp.com/doc/) - Swagger Api Doc
+
+
 ## Test Cases
 ### Auth
 - user should should signup and return a status code 201 with the following response data: userId, fullName, email, walletId, balance.
@@ -40,6 +45,3 @@
 - user only if aunthenticated can view account, should return a 401 unathenticated
 - useraccount detail gotten should exactly equal the authenticated user.
 
-## Project Urls
-- [HostedUrl]() - Heroku hosted url
-- [Doc]() - Swagger Api Doc
