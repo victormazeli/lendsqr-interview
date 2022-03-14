@@ -60,6 +60,21 @@ describe('routes testing', () => {
             res.body.data.walletId.should.not.eql(null)
             res.body.data.balance.should.not.eql(null)
         })
+        it('should retrun error for none authenticated user', async () => {
+            const newAccountPayload = {
+                fullName: 'testuser1',
+                email: 'testuser1@gmail.com',
+                password: 'welcome@1',
+            }
+            const userlogin = await authAction.login(
+                newAccountPayload.password,
+                newAccountPayload.email
+            )
+            const { token } = userlogin.body.data
+            const res = await UserAction.getUserAcount('')
+            console.log(res.body)
+            res.status.should.eql(status.BAD_REQUEST)
+        })
     })
 
     describe('POST Request: /fund/wallet', () => {
