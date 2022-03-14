@@ -72,8 +72,7 @@ describe('routes testing', () => {
             )
             const { token } = userlogin.body.data
             const res = await UserAction.getUserAcount('')
-            console.log(res.body)
-            res.status.should.eql(status.BAD_REQUEST)
+            res.status.should.eql(status.UNAUTHORIZED)
         })
     })
 
