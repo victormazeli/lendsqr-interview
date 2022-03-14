@@ -42,7 +42,7 @@ jobs:
     - name: Coveralls Parallel
       uses: coverallsapp/github-action@master
       with:
-        github-token: ${{ secrets.GIT_TOKEN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         flag-name: run-${{ matrix.node-version }}
         parallel: true
 
@@ -53,5 +53,5 @@ jobs:
     - name: Coveralls Finished
       uses: coverallsapp/github-action@master
       with:
-        github-token: ${{ secrets.GIT_TOKEN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         parallel-finished: true
