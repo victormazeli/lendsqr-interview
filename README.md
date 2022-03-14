@@ -18,6 +18,7 @@
 ## Project Urls
 - [HostedUrl](https://lendsqr-int-task.herokuapp.com) - Heroku hosted url
 - [Doc](https://lendsqr-int-task.herokuapp.com/doc/) - Swagger Api Doc
+- [Postman-Doc](https://documenter.getpostman.com/view/12847208/UVsLQ5qy) - Postman Documentation
 
 
 ## Test Cases
