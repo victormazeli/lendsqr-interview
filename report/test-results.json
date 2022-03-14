@@ -1,0 +1,281 @@
+true
+info: 03-14-2022 11:01:07: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:07 +0000] "POST /auth/login HTTP/1.1" 200 267 "-" "-"
+
+info: 03-14-2022 11:01:08: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:08 +0000] "POST /auth/login HTTP/1.1" 400 86 "-" "-"
+
+info: 03-14-2022 11:01:08: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:08 +0000] "POST /register/new/account HTTP/1.1" 201 240 "-" "-"
+
+info: 03-14-2022 11:01:08: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:08 +0000] "POST /register/new/account HTTP/1.1" 400 78 "-" "-"
+
+true
+info: 03-14-2022 11:01:09: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:09 +0000] "POST /auth/login HTTP/1.1" 200 267 "-" "-"
+
+{ id: '7e34b959-2cb5-4e16-b9fe-b07d9d327d3b' }
+info: 03-14-2022 11:01:09: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:09 +0000] "GET /user/account HTTP/1.1" 200 243 "-" "-"
+
+true
+info: 03-14-2022 11:01:09: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:09 +0000] "POST /auth/login HTTP/1.1" 200 267 "-" "-"
+
+info: 03-14-2022 11:01:09: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:09 +0000] "POST /user/fund/wallet HTTP/1.1" 200 240 "-" "-"
+
+true
+info: 03-14-2022 11:01:10: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:10 +0000] "POST /auth/login HTTP/1.1" 200 267 "-" "-"
+
+info: 03-14-2022 11:01:10: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:10 +0000] "POST /user/fund/wallet HTTP/1.1" 400 55 "-" "-"
+
+true
+info: 03-14-2022 11:01:10: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:10 +0000] "POST /auth/login HTTP/1.1" 200 267 "-" "-"
+
+{ id: 'e9c75ec6-d977-49e6-a84d-131e8888e399' }
+info: 03-14-2022 11:01:10: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:10 +0000] "GET /user/account HTTP/1.1" 200 243 "-" "-"
+
+true
+info: 03-14-2022 11:01:10: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:10 +0000] "POST /auth/login HTTP/1.1" 200 267 "-" "-"
+
+info: 03-14-2022 11:01:10: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:10 +0000] "POST /user/fund/wallet HTTP/1.1" 200 240 "-" "-"
+
+info: 03-14-2022 11:01:10: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:10 +0000] "POST /user/transfer/funds HTTP/1.1" 200 242 "-" "-"
+
+true
+info: 03-14-2022 11:01:11: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:11 +0000] "POST /auth/login HTTP/1.1" 200 267 "-" "-"
+
+{ id: 'b4aa6241-f321-433f-b487-7f877986b5a4' }
+info: 03-14-2022 11:01:11: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:11 +0000] "GET /user/account HTTP/1.1" 200 243 "-" "-"
+
+true
+info: 03-14-2022 11:01:11: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:11 +0000] "POST /auth/login HTTP/1.1" 200 267 "-" "-"
+
+info: 03-14-2022 11:01:11: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:11 +0000] "POST /user/fund/wallet HTTP/1.1" 400 55 "-" "-"
+
+info: 03-14-2022 11:01:11: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:11 +0000] "POST /user/transfer/funds HTTP/1.1" 400 91 "-" "-"
+
+true
+info: 03-14-2022 11:01:11: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:11 +0000] "POST /auth/login HTTP/1.1" 200 267 "-" "-"
+
+info: 03-14-2022 11:01:11: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:11 +0000] "POST /user/fund/wallet HTTP/1.1" 200 240 "-" "-"
+
+info: 03-14-2022 11:01:11: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:11 +0000] "POST /user/withdraw/funds HTTP/1.1" 200 246 "-" "-"
+
+true
+info: 03-14-2022 11:01:12: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:12 +0000] "POST /auth/login HTTP/1.1" 200 267 "-" "-"
+
+info: 03-14-2022 11:01:12: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:12 +0000] "POST /user/fund/wallet HTTP/1.1" 200 240 "-" "-"
+
+info: 03-14-2022 11:01:12: 	::ffff:127.0.0.1 - - [14/Mar/2022:10:01:12 +0000] "POST /user/withdraw/funds HTTP/1.1" 400 55 "-" "-"
+
+{
+  "stats": {
+    "suites": 9,
+    "tests": 11,
+    "passes": 11,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-14T10:01:07.045Z",
+    "end": "2022-03-14T10:01:12.538Z",
+    "duration": 5493
+  },
+  "tests": [
+    {
+      "title": "authenticate a user ",
+      "fullTitle": "routes testing POST Request: /auth/login authenticate a user ",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.auth.spec.js",
+      "duration": 138,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should return an error ",
+      "fullTitle": "routes testing POST Request: /auth/login should return an error ",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.auth.spec.js",
+      "duration": 7,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "create new account",
+      "fullTitle": "routes testing POST Request: /register/new/account create new account",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.register.spec.js",
+      "duration": 106,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should return an error ",
+      "fullTitle": "routes testing POST Request: /register/new/account should return an error ",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.register.spec.js",
+      "duration": 6,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "get user account",
+      "fullTitle": "routes testing GET Request: /user/account get user account",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.user.spec.js",
+      "duration": 103,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Fund wallet",
+      "fullTitle": "routes testing POST Request: /fund/wallet Fund wallet",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.user.spec.js",
+      "duration": 129,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Should throw an error",
+      "fullTitle": "routes testing POST Request: /fund/wallet Should throw an error",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.user.spec.js",
+      "duration": 111,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "transfer funds",
+      "fullTitle": "routes testing POST Request: /user/transfer/funds transfer funds",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.user.spec.js",
+      "duration": 210,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should throw an error",
+      "fullTitle": "routes testing POST Request: /user/transfer/funds should throw an error",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.user.spec.js",
+      "duration": 195,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "withdraw Fund from wallet",
+      "fullTitle": "routes testing POST Request: /withdraw/funds withdraw Fund from wallet",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.user.spec.js",
+      "duration": 110,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should throw an error",
+      "fullTitle": "routes testing POST Request: /withdraw/funds should throw an error",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.user.spec.js",
+      "duration": 125,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "authenticate a user ",
+      "fullTitle": "routes testing POST Request: /auth/login authenticate a user ",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.auth.spec.js",
+      "duration": 138,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should return an error ",
+      "fullTitle": "routes testing POST Request: /auth/login should return an error ",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.auth.spec.js",
+      "duration": 7,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "create new account",
+      "fullTitle": "routes testing POST Request: /register/new/account create new account",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.register.spec.js",
+      "duration": 106,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should return an error ",
+      "fullTitle": "routes testing POST Request: /register/new/account should return an error ",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.register.spec.js",
+      "duration": 6,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "get user account",
+      "fullTitle": "routes testing GET Request: /user/account get user account",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.user.spec.js",
+      "duration": 103,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Fund wallet",
+      "fullTitle": "routes testing POST Request: /fund/wallet Fund wallet",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.user.spec.js",
+      "duration": 129,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Should throw an error",
+      "fullTitle": "routes testing POST Request: /fund/wallet Should throw an error",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.user.spec.js",
+      "duration": 111,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "transfer funds",
+      "fullTitle": "routes testing POST Request: /user/transfer/funds transfer funds",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.user.spec.js",
+      "duration": 210,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should throw an error",
+      "fullTitle": "routes testing POST Request: /user/transfer/funds should throw an error",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.user.spec.js",
+      "duration": 195,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "withdraw Fund from wallet",
+      "fullTitle": "routes testing POST Request: /withdraw/funds withdraw Fund from wallet",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.user.spec.js",
+      "duration": 110,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should throw an error",
+      "fullTitle": "routes testing POST Request: /withdraw/funds should throw an error",
+      "file": "/Users/victor/work/lendsqr-test/src/test/specs/integration/routes.user.spec.js",
+      "duration": 125,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    }
+  ]
+}
