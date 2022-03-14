@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">31.03% </span>
+                <span class="strong">62.06% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/29</span>
+                <span class='fraction'>18/29</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">60% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>3/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">31.03% </span>
+                <span class="strong">62.06% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/29</span>
+                <span class='fraction'>18/29</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -197,31 +197,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -230,14 +213,31 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -309,15 +309,15 @@ import Headers from '../../testData/defaultHeaders'
 &nbsp;
 /** This sendPOSTRequest can be used when you dont need to pass a token while performing a POST operation * */
 &nbsp;
-const sendPOSTRequest = <span class="fstat-no" title="function not covered" >async (b</span>aseUrl, apiEndPoint, requestBody) =&gt; {
-<span class="cstat-no" title="statement not covered" >    try {</span>
-        const res = <span class="cstat-no" title="statement not covered" >await supertest(b</span>aseUrl)
+const sendPOSTRequest = async (baseUrl, apiEndPoint, requestBody) =&gt; {
+    try {
+        const res = await supertest(baseUrl)
             .post(apiEndPoint)
             .retry(2)
             .set(Headers.ACCEPT_JSON)
             .set(Headers.APPLICATION_JSON)
             .send(requestBody)
-<span class="cstat-no" title="statement not covered" >        return r</span>es
+        return res
     } catch (err) {
 <span class="cstat-no" title="statement not covered" >        console.</span>log('Error in sending POST Request: ', err)
     }
@@ -325,16 +325,16 @@ const sendPOSTRequest = <span class="fstat-no" title="function not covered" >asy
 &nbsp;
 /** This sendPOSTRequest1 can be used when you will be passing a token and body params while performing a POST operation * */
 &nbsp;
-const sendPOSTRequest1 = <span class="fstat-no" title="function not covered" >async (b</span>aseUrl, apiEndPoint, requestBody, token) =&gt; {
-<span class="cstat-no" title="statement not covered" >    try {</span>
-        const res = <span class="cstat-no" title="statement not covered" >await supertest(b</span>aseUrl)
+const sendPOSTRequest1 = async (baseUrl, apiEndPoint, requestBody, token) =&gt; {
+    try {
+        const res = await supertest(baseUrl)
             .post(apiEndPoint)
             .retry(2)
             .set(Headers.ACCEPT_JSON)
             .set(Headers.APPLICATION_JSON)
             .set('Authorization', `Bearer ${token}`)
             .send(requestBody)
-<span class="cstat-no" title="statement not covered" >        return r</span>es
+        return res
     } catch (err) {
 <span class="cstat-no" title="statement not covered" >        console.</span>log('Error in sending POST Request: ', err)
     }
@@ -342,15 +342,15 @@ const sendPOSTRequest1 = <span class="fstat-no" title="function not covered" >as
 &nbsp;
 /** This sendGETRequest can be used when you will be passing a token while performing a GET operation * */
 &nbsp;
-const sendGETRequest = <span class="fstat-no" title="function not covered" >async (b</span>aseUrl, apiEndPoint, token) =&gt; {
-<span class="cstat-no" title="statement not covered" >    try {</span>
-        const res = <span class="cstat-no" title="statement not covered" >await supertest(b</span>aseUrl)
+const sendGETRequest = async (baseUrl, apiEndPoint, token) =&gt; {
+    try {
+        const res = await supertest(baseUrl)
             .get(apiEndPoint)
             .retry(2)
             .set(Headers.ACCEPT_JSON)
             .set(Headers.APPLICATION_JSON)
             .set('Authorization', `Bearer ${token}`)
-<span class="cstat-no" title="statement not covered" >        return r</span>es
+        return res
     } catch (err) {
 <span class="cstat-no" title="statement not covered" >        console.</span>log('Error in sending GET Request: ', err)
     }
@@ -403,7 +403,7 @@ export default {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Mar 14 2022 16:16:34 GMT+0100 (West Africa Standard Time)
+                at Mon Mar 14 2022 16:19:43 GMT+0100 (West Africa Standard Time)
             </div>
         </div>
         <script src="../../../../../prettify.js"></script>
