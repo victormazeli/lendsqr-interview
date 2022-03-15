@@ -14,6 +14,7 @@
 - chai
 - coverall
 - nyc
+Testing results are located in the coverage directory
 
 ## Project Urls
 - [HostedUrl](https://lendsqr-int-task.herokuapp.com) - Heroku hosted url
