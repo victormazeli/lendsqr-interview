@@ -9,11 +9,19 @@ const doc = {
         title: process.env.APPNAME, // by default: 'REST API'
         description: 'This the documenetation for the Branch service', // by default: ''
     },
-    host: process.env.APPHOST, // by default: 'localhost:3000'
+    securityDefinitions: {
+        bearerAuth: {
+            type: 'apiKey',
+            name: 'Authorization',
+            scheme: 'bearer',
+            in: 'header',
+        },
+    },
+    host: 'https://lendsqr-int-task.herokuapp.com/', // by default: 'localhost:3000'
     schemes: ['http', 'https'],
     consumes: ['application/json'],
     produces: ['application/json'],
-    basePath: '', // by default: '/'
+    basePath: '/', // by default: '/'
 }
 
 const outputFile = './docs/swagger-output.json'

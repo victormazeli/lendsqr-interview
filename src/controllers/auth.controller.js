@@ -19,7 +19,7 @@ class AuthController {
         const { email, password } = req.body
         try {
             const user = await UserRepository.findByEmail(email)
-            if (user === []) {
+            if (!user) {
                 return res
                     .status(404)
                     .json(
