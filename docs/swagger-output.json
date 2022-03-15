@@ -2,15 +2,23 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0.0",
-    "title": "User Service",
+    "title": "REST API",
     "description": "This the documenetation for the Branch service"
   },
-  "host": "localhost:8052",
-  "basePath": "",
+  "host": "https://lendsqr-int-task.herokuapp.com/",
+  "basePath": "/",
   "schemes": [
     "http",
     "https"
   ],
+  "securityDefinitions": {
+    "bearerAuth": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "scheme": "bearer",
+      "in": "header"
+    }
+  },
   "consumes": [
     "application/json"
   ],
