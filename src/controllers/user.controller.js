@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable no-console */
 import logger from '../utilities/logger'
@@ -16,7 +17,6 @@ class UserContoller {
      */
     static async getUserAccount(req, res) {
         const { id } = req.user
-        console.log(req.user)
         try {
             const getAccount = await UserRepository.getUserAccount(id)
             if (getAccount === []) {
@@ -85,6 +85,11 @@ class UserContoller {
 
         try {
             const findWallet = await WalletRepository.findById(walletId)
+            if (!findWallet[0]) {
+                return res
+                    .status(400)
+                    .json(responses.error(400, 'WalletId does not exist'))
+            }
             const addUpAmount = findWallet[0].balance + amount
             await WalletRepository.update(findWallet[0].id, addUpAmount)
             // subtract amount from user wallet

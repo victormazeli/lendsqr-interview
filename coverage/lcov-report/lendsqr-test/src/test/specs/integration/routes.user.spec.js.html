@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>142/142</span>
+                <span class='fraction'>150/150</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>19/19</span>
+                <span class='fraction'>20/20</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>142/142</span>
+                <span class='fraction'>150/150</span>
             </div>
         
             
@@ -325,7 +325,20 @@
 <a name='L266'></a><a href='#L266'>266</a>
 <a name='L267'></a><a href='#L267'>267</a>
 <a name='L268'></a><a href='#L268'>268</a>
-<a name='L269'></a><a href='#L269'>269</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L269'></a><a href='#L269'>269</a>
+<a name='L270'></a><a href='#L270'>270</a>
+<a name='L271'></a><a href='#L271'>271</a>
+<a name='L272'></a><a href='#L272'>272</a>
+<a name='L273'></a><a href='#L273'>273</a>
+<a name='L274'></a><a href='#L274'>274</a>
+<a name='L275'></a><a href='#L275'>275</a>
+<a name='L276'></a><a href='#L276'>276</a>
+<a name='L277'></a><a href='#L277'>277</a>
+<a name='L278'></a><a href='#L278'>278</a>
+<a name='L279'></a><a href='#L279'>279</a>
+<a name='L280'></a><a href='#L280'>280</a>
+<a name='L281'></a><a href='#L281'>281</a>
+<a name='L282'></a><a href='#L282'>282</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -343,18 +356,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -513,6 +526,19 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -770,18 +796,6 @@ describe('routes testing', () =&gt; {
             res.body.data.balance.should.not.eql(null)
         })
         it('should throw an error', async () =&gt; {
-            const newAccountPayload2 = {
-                fullName: 'testuser1',
-                email: 'testuser1@gmail.com',
-                password: 'welcome@1',
-            }
-            const account2login = await authAction.login(
-                newAccountPayload2.password,
-                newAccountPayload2.email
-            )
-            const token2 = account2login.body.data.token
-            const account2 = await UserAction.getUserAcount(token2)
-            const account2Wallet = account2.body.data.walletId
             const newAccountPayload = {
                 fullName: 'testuser3',
                 email: 'testuser3@gmail.com',
@@ -805,6 +819,31 @@ describe('routes testing', () =&gt; {
             res.body.errors.should.be.a('array')
             amount.should.eql('amount must be greater than 0')
             walletId.should.eql('walletId is required')
+        })
+        it('should throw an error for an invalid walletId', async () =&gt; {
+            const newAccountPayload = {
+                fullName: 'testuser3',
+                email: 'testuser3@gmail.com',
+                password: 'welcome@1',
+            }
+            const account1login = await authAction.login(
+                newAccountPayload.password,
+                newAccountPayload.email
+            )
+            const token1 = account1login.body.data.token
+            const amountToTransfer = 1000
+            await UserAction.fundWallet(amountToTransfer, token1)
+            const res = await UserAction.transferFunds(
+                amountToTransfer,
+                'b414ffaf-576a-5f4d-96a7-3cf94031cd19',
+                token1
+            )
+            console.log(res.body)
+            const { error, message } = res.body
+            res.status.should.eql(status.BAD_REQUEST)
+            res.body.should.be.a('object')
+            error.should.eql(true)
+            message.should.eql('WalletId does not exist')
         })
     })
 &nbsp;
@@ -868,7 +907,7 @@ describe('routes testing', () =&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Mar 14 2022 23:23:52 GMT+0100 (West Africa Standard Time)
+                at Tue Mar 15 2022 10:46:35 GMT+0100 (West Africa Standard Time)
             </div>
         </div>
         <script src="../../../../../prettify.js"></script>

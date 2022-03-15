@@ -175,18 +175,6 @@ describe('routes testing', () => {
             res.body.data.balance.should.not.eql(null)
         })
         it('should throw an error', async () => {
-            const newAccountPayload2 = {
-                fullName: 'testuser1',
-                email: 'testuser1@gmail.com',
-                password: 'welcome@1',
-            }
-            const account2login = await authAction.login(
-                newAccountPayload2.password,
-                newAccountPayload2.email
-            )
-            const token2 = account2login.body.data.token
-            const account2 = await UserAction.getUserAcount(token2)
-            const account2Wallet = account2.body.data.walletId
             const newAccountPayload = {
                 fullName: 'testuser3',
                 email: 'testuser3@gmail.com',
@@ -210,6 +198,30 @@ describe('routes testing', () => {
             res.body.errors.should.be.a('array')
             amount.should.eql('amount must be greater than 0')
             walletId.should.eql('walletId is required')
+        })
+        it('should throw an error for an invalid walletId', async () => {
+            const newAccountPayload = {
+                fullName: 'testuser3',
+                email: 'testuser3@gmail.com',
+                password: 'welcome@1',
+            }
+            const account1login = await authAction.login(
+                newAccountPayload.password,
+                newAccountPayload.email
+            )
+            const token1 = account1login.body.data.token
+            const amountToTransfer = 1000
+            await UserAction.fundWallet(amountToTransfer, token1)
+            const res = await UserAction.transferFunds(
+                amountToTransfer,
+                'b414ffaf-576a-5f4d-96a7-3cf94031cd19',
+                token1
+            )
+            const { error, message } = res.body
+            res.status.should.eql(status.BAD_REQUEST)
+            res.body.should.be.a('object')
+            error.should.eql(true)
+            message.should.eql('WalletId does not exist')
         })
     })
 
